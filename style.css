@@ -1,0 +1,137 @@
+/* General Reset */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8f5e9;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #43a047, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2e7d32;
+    border-bottom: 3px solid #43a047;
+    margin-bottom: 1rem;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    margin-left: 0.5rem;
+}
+
+button {
+    background-color: #43a047;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #2e7d32;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #1b5e20;
+}
+
+#incompleteBookList,
+#completeBookList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+[data-testid="bookItem"] {
+    border: 1px solid #ddd;
+    padding: 1.25rem;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-testid="bookItem"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+[data-testid="bookItem"] h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #2e7d32;
+}
+
+[data-testid="bookItem"] p {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+[data-testid="bookItem"] div {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+[data-testid="bookItem"] button {
+    flex: 1;
+    padding: 0.75rem;
+}
+
+/* Highlight Search Results */
+[data-highlight="true"] {
+    background-color: #fff59d;
+    border-color: #fbc02d;
+}
